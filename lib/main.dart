@@ -47,7 +47,33 @@ class MyApp extends StatelessWidget{
              ],
 
            ),
-          Image.network('https://cdn.vectorstock.com/i/1000x1000/88/62/female-doll-cartoon-vector-48838862.webp')
+          Image.network('https://cdn.vectorstock.com/i/1000x1000/88/62/female-doll-cartoon-vector-48838862.webp',width:200,height:100),
+           Image.asset('images/me1.jpg',width:100,height:100),
+           RichText(text: TextSpan(
+             text: 'Hello',
+            style: TextStyle(
+                color:Colors.green
+            ),
+
+             children: [
+               TextSpan(
+               text: ' Name ',
+           style: TextStyle(
+               color: Colors.blue
+           ),
+               ),
+  TextSpan(
+  text: ' I am',
+    style: TextStyle(
+      fontSize: 20,
+      fontWeight: FontWeight.bold
+    )
+),
+             ]
+           )
+
+           )
+
          ]
        ),
        
