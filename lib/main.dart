@@ -22,24 +22,121 @@ class MyApp extends StatelessWidget{
             Icon(Icons.search, size: 36)
           ],
         ),
+     
+     
+     body: Scrollbar(
+       thickness: 20,
+       radius: Radius.circular(10),
 
-      body:Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-          InkWell(
-            onTap: (){
-              print('tapped on Jannat');
-            },
-            borderRadius: BorderRadius.circular(16),
-            onLongPress: (){},
-            child: Text('Jannat',style:TextStyle(fontSize: 40)),
-          ),
-          ],
+       child: ListView(
+         children: [
+           ListTile(
+             title: Text('User name'),
+             subtitle: Text('jannat@gmail.com'),
+             leading: Icon(Icons.facebook_rounded),
+             trailing: Icon(Icons.email_rounded),
+             onTap: (){
+               print('List the pressed');
+             },
+           ),
+           Divider(
+             height: 10,
+             thickness: 3,
+             color: Colors.blue,
+             endIndent: 16,
+             indent: 16,
+           ),
 
-        ),
-      )
 
+           ListTile(
+             title: Text('User name'),
+             subtitle: Text('jannat@gmail.com'),
+             leading: Icon(Icons.install_desktop_outlined),
+             trailing: Icon(Icons.email_rounded),
+           ),
+           Divider(
+             height: 10,
+             thickness: 3,
+             color: Colors.blue,
+             endIndent: 16,
+             indent: 16,
+           ),
+
+
+           ListTile(
+             title: Text('User name'),
+             subtitle: Text('jannat@gmail.com'),
+             leading: Icon(Icons.snapchat_rounded),
+             trailing: Icon(Icons.email_rounded),
+           ),
+           Divider(
+             height: 10,
+             thickness: 3,
+             color: Colors.blue,
+             endIndent: 16,
+             indent: 16,
+           ),
+
+
+           ListTile(
+             title: Text('User name'),
+             subtitle: Text('jannat@gmail.com'),
+             leading: Icon(Icons.phone_android_outlined),
+             trailing: Icon(Icons.email_rounded),
+           ),
+
+
+
+
+
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+           Text('Jannat'),
+
+
+
+
+
+         ],
+       ),
+     ),
       ),
     );
   }
