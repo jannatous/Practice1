@@ -28,112 +28,15 @@ class MyApp extends StatelessWidget{
        thickness: 20,
        radius: Radius.circular(10),
 
-       child: ListView(
+       child: GridView(
+gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
          children: [
-           ListTile(
-             title: Text('User name'),
-             subtitle: Text('jannat@gmail.com'),
-             leading: Icon(Icons.facebook_rounded),
-             trailing: Icon(Icons.email_rounded),
-             onTap: (){
-               print('List the pressed');
-             },
-           ),
-           Divider(
-             height: 10,
-             thickness: 3,
-             color: Colors.blue,
-             endIndent: 16,
-             indent: 16,
-           ),
-
-
-           ListTile(
-             title: Text('User name'),
-             subtitle: Text('jannat@gmail.com'),
-             leading: Icon(Icons.install_desktop_outlined),
-             trailing: Icon(Icons.email_rounded),
-           ),
-           Divider(
-             height: 10,
-             thickness: 3,
-             color: Colors.blue,
-             endIndent: 16,
-             indent: 16,
-           ),
-
-
-           ListTile(
-             title: Text('User name'),
-             subtitle: Text('jannat@gmail.com'),
-             leading: Icon(Icons.snapchat_rounded),
-             trailing: Icon(Icons.email_rounded),
-           ),
-           Divider(
-             height: 10,
-             thickness: 3,
-             color: Colors.blue,
-             endIndent: 16,
-             indent: 16,
-           ),
-
-
-           ListTile(
-             title: Text('User name'),
-             subtitle: Text('jannat@gmail.com'),
-             leading: Icon(Icons.phone_android_outlined),
-             trailing: Icon(Icons.email_rounded),
-           ),
-
-
-
-
-
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-           Text('Jannat'),
-
-
-
-
-
+           Icon(Icons.confirmation_num_sharp),
+           Icon(Icons.confirmation_num_sharp),
+           Icon(Icons.confirmation_num_sharp),
+           Icon(Icons.confirmation_num_sharp),
+           Icon(Icons.confirmation_num_sharp),
+           Icon(Icons.confirmation_num_sharp),
          ],
        ),
      ),
